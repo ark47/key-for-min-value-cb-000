@@ -3,7 +3,6 @@
 
 def key_for_min_value(name_hash)
   hold = []
-  stuff = []
 
   name_hash.each do |x, y|
     if hold[0] = nil
@@ -13,5 +12,5 @@ def key_for_min_value(name_hash)
       hold << y
     end
   end
-  
+  hold
 end
