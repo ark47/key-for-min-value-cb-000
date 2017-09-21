@@ -13,6 +13,10 @@ def key_for_min_value(name_hash)
     end
   end
 
-  hold
+  name_hash.collect do |a, b|
+    if b == hold[0]
+      a
+    end
+  end
 
 end
