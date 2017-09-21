@@ -3,6 +3,7 @@
 
 def key_for_min_value(name_hash)
   hold = []
+  stuff = []
   name_hash.collect do |x, y|
     hold << y
   end
@@ -11,4 +12,5 @@ def key_for_min_value(name_hash)
     stuff << x
   end
   end
+  stuff
 end
