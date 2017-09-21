@@ -2,8 +2,10 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
+
   hold = []
   person = []
+
   name_hash.each do |x, y|
     if hold.empty?
       hold << y
@@ -18,5 +20,7 @@ def key_for_min_value(name_hash)
       person << a
     end
   end
+
   person[0]
+
 end
