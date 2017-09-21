@@ -7,9 +7,9 @@ def key_for_min_value(name_hash)
   name_hash.collect do |x, y|
     hold << y
   end
-  name_hash.collect do |x, y|
-  if hold.all?
-    stuff << x
+  name_hash.collect do |a, b|
+  if b <= hold.all?
+    stuff << a
   end
   end
   stuff
