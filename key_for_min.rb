@@ -4,13 +4,14 @@
 def key_for_min_value(name_hash)
   hold = []
   stuff = []
-  name_hash.collect do |x, y|
-    hold << y
+
+  name_hash.each do |x, y|
+    if hold[0] = nil
+      hold << y
+    elsif hold[0] > y
+      hold.pop
+      hold << y
+    end
   end
-  name_hash.collect do |a, b|
-  if b <= hold.all?
-    stuff << a
-  end
-  end
-  stuff
+  
 end
