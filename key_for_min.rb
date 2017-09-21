@@ -15,7 +15,7 @@ def key_for_min_value(name_hash)
 
   name_hash.find do |a, b|
     if b == hold[0]
-      puts a
+      a
     end
   end
 
